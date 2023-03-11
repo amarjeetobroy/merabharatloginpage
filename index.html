@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mera Bharat Login & Registration Form  </title>
+         <link rel="stylesheet" href="style.css">
+         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+         <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,100;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap" 
+rel="stylesheet">
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
+</head>
+<body>
+
+    <header class="header">
+        <nav class="navbar">
+            <a href="https://en.wikipedia.org/wiki/India_House" target="_blank">House</a>
+            <a href="https://en.wikipedia.org/wiki/India" target="blank">About</a>
+            <a href="https://en.wikipedia.org/wiki/All_India_Services" target="_blank">Service</a>
+            <a href="https://github.com/amarjeetobroy" target="_blank">Contact</a>
+            
+        </nav>
+
+        <form action="#" class="search-bar">
+            <input type="text" placeholder="Search..">
+            <button type="submit"><i class='bx bx-search'></i>
+            </button>
+        </form>
+    </header>
+    
+    <div class="background"></div>
+    <div class="container">
+        <div class="content">
+            <div class="logo"><h2 class='animated infinite heartBeat'><i class='bx bxs-flag-alt'></i>MERA BHARAT</h2></div>
+
+            <div class="text-sci">
+                <h2>Welcome! <br><span> To Our Country In India.</span></h2>
+
+                <p>India is a great country having different cultures, <br>
+                    castes, creed, religions but still, they live together.<br>
+                     India is known for its heritage, spices, and of<br>
+                      course, for people who live here.<br></p>
+
+                 <p><h5>Created By :- Amarjeet Obroy
+                    <br>Contact me by social media :</h5></p>
+                 <!-- <p><h5>Contact me by social media :</h5></p> -->
+
+                 <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/amarjeet-obroy-099b84209/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://www.facebook.com/amarjeet.ashik.9" target="_blank"><i class='bx bxl-facebook' ></i></a>
+                    <a href="https://www.instagram.com/obroyamarjeet/" target="_blank"><i class='bx bxl-instagram' ></i></a>
+                    <a href="https://twitter.com/Amarjeet7992" target="blank"><i class='bx bxl-twitter' ></i></a>
+                    <a href="https://www.youtube.com/@expertcoding3624" target="_blank"><i class='bx bxl-youtube'></i></a>
+                    <a href="https://github.com/amarjeetobroy" target="_blank"><i class='bx bxl-github'></i></a>
+                 </div>
+            </div>
+        </div>
+
+        <div class="logreg-box">
+            <div class="form-box login">
+                <form action="#">
+                    <h2>Sign In</h2>
+
+                    <div class="input-box">
+                        <span class="icon"><i class='bx bxs-envelope'></i></span>
+                        <input type="email" required>
+                        <label>Email</label>
+                    </div>
+
+                    <div class="input-box">
+                        <span class="icon"><i class='bx bxs-lock-alt'></i></span>
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div>
+
+                    <div class="remember-forgot">
+                       <label><input type="checkbox">Remember me</label> 
+                       <a href="#">Forgot password?</a>
+                    </div>
+
+                    <button type="submit" class="btn">Sign In</button>
+
+                    <div class="login-register">
+                        <p>Don't have any account? <a href="#" class="register-link">Sign Up</a></p>
+                    </div>
+                </form>
+            </div>
+
+            <div class="form-box register">
+                <form action="#">
+                    <h2>Sign Up</h2>
+
+                    <div class="input-box">
+                        <span class="icon"><i class='bx bxs-user'></i></span>
+                        <input type="text" required>
+                        <label>Name</label>
+                    </div>
+
+                    <div class="input-box">
+                        <span class="icon"><i class='bx bxs-envelope'></i></span>
+                        <input type="email" required>
+                        <label>Email</label>
+                    </div>
+
+                    <div class="input-box">
+                        <span class="icon"><i class='bx bxs-lock-alt'></i></span>
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div>
+
+                    <div class="remember-forgot">
+                       <label><input type="checkbox">I agree to the terms & conditions</label> 
+                       <!-- <a href="#">Forgot password?</a> -->
+                    </div>
+
+                    <button type="submit" class="btn" onclick="openPopup()">Sign Up</button>
+                    <!-- popup html from here -->
+                    <div class="popup" id="popup">
+                        <img src="tick-png.png" alt="">
+                        <h2>Thank You</h2>
+                        <p>Your details has been successfully submitted. Thanks!</p>
+                        <button type="button"  onclick="closePopup()">OK</button>
+                    </div>
+                    <!-- upto here -->
+
+                    <div class="login-register">
+                        <p>Already have an account? <a href="#" class="login-link">Sign in</a></p>
+                    </div>
+               </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
